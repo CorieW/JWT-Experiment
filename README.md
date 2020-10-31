@@ -10,6 +10,11 @@ JWT Notes:
 - Store the token in a HttpOnly Cookie.
 - Only ever set the expiry time to 5 minutes or less, if an attacker gets their hands on someone's token they can access their account.
 
+Potential Improvements:
+- Don't allow a user to register/login when they're already logged in. (Client-side operation?)
+- Redirect user to login if they try to access a protected route. (Client-side operation?)
+- After registration, log user in automatically and redirect them to home page. (Client-side operation?)
+
 Sources:
 - https://www.sohamkamani.com/blog/javascript/2019-03-29-node-jwt-authentication/
 Helped me implement JWT in node.

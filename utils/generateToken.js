@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken")
 
-function getToken(email)
+function generateToken(email)
 {
     return jwt.sign({ email }, process.env.SECRET, {
 		algorithm: "HS256",
@@ -8,4 +8,4 @@ function getToken(email)
 	})
 }
 
-module.exports = getToken
+module.exports = generateToken

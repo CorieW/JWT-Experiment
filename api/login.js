@@ -1,6 +1,6 @@
 const express = require('express');
 const bcrypt = require('bcrypt');
-const token = require('../utils/token')
+const generateToken = require('../utils/generateToken')
 
 const connection = require('../config/database')
 const messages = require('../utils/messages')
@@ -20,7 +20,7 @@ router.post('', (req, res) => // Learn how to seperate some of this code
         if(result == false) return res.status(401).send(messages.incorrectDetails)
 
         // Handling tokens for persistent logins
-        res.cookie('token', token(email), { maxAge: 300 * 1000, httpOnly: true })
+        res.cookie('token', generateToken(email), { maxAge: 300 * 1000, httpOnly: true })
 
         return res.status(200).send(messages.loginSuccess)
     })
