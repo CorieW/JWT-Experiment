@@ -25,4 +25,4 @@ Provided insight on how and why JWT is useful and how it's used.
 - https://ponyfoo.com/articles/json-web-tokens-vs-session-cookies#:~:text=When%20encoded%2C%20the%20size%20of,the%20session%20on%20each%20request.
 Helped me understand the differences between session ID's and JWT's for authorization. Provides some clear advantages and disadvantages for both.
 
-https://medium.com/@itsgosho2/how-to-transfer-http-only-cookies-with-express-back-end-and-the-fetch-api-2035f0ac48d9
+- https://medium.com/@itsgosho2/how-to-transfer-http-only-cookies-with-express-back-end-and-the-fetch-api-2035f0ac48d9
